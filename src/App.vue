@@ -1,12 +1,22 @@
 y<template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <HeadBar></HeadBar>
     <router-view/>
   </div>
 </template>
+
+<script>
+
+import HeadBar from './components/HeadBar'
+import BottomBar from './components/BottomBar'
+
+export default {
+  components: {
+     HeadBar,
+     BottomBar
+  }
+}
+</script>
 
 <style>
 
