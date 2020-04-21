@@ -23,16 +23,16 @@ export default {
             console.log(key, keyPath);
         },
         toRegiest(){
-            this.$router.push('/regiest');
+            this.$router.push('/regiest').catch(err => {err});
         },
         toHome(){
-            this.$router.push('/home');
+            this.$router.push('/home').catch(err => {err});
         },
         toUser(){
-            this.$router.push('/user')
+            this.$router.push('/user').catch(err => {err});
         },
         toLogin(){
-            this.$router.push('/login')
+            this.$router.push('/login').catch(err => {err});
         }
     }
 }
@@ -42,5 +42,8 @@ export default {
   #headbar{
       width: 1024px;
       margin: 5px auto;
+  }
+  .el-menu-item {
+    font-size: 20px !important;
   }
 </style>
